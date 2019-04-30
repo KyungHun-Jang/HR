@@ -36,22 +36,42 @@
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Meu-FS-Wjo">
-                        <rect key="frame" x="16" y="30" width="288" height="518"/>
+                        <rect key="frame" x="10" y="382" width="300" height="166"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <connections>
                             <outlet property="dataSource" destination="4rg-Su-FQp" id="dzY-wT-C0o"/>
                         </connections>
                     </tableView>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="6yt-8S-u4v">
+                        <rect key="frame" x="10" y="30" width="300" height="332"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="oTT-JL-hH5">
+                            <size key="itemSize" width="250" height="300"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <connections>
+                            <outlet property="dataSource" destination="4rg-Su-FQp" id="vfF-Z8-yrX"/>
+                        </connections>
+                    </collectionView>
                 </subviews>
                 <color key="backgroundColor" red="1" green="0.82356640739999998" blue="0.54795165469999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 <constraints>
+                    <constraint firstItem="6yt-8S-u4v" firstAttribute="leading" secondItem="yca-aa-Fhp" secondAttribute="leading" constant="10" id="63q-Dq-EDJ"/>
                     <constraint firstItem="yca-aa-Fhp" firstAttribute="bottom" secondItem="Meu-FS-Wjo" secondAttribute="bottom" constant="20" id="AzB-jA-rlq"/>
-                    <constraint firstItem="Meu-FS-Wjo" firstAttribute="top" secondItem="yca-aa-Fhp" secondAttribute="top" constant="10" id="Tsd-HJ-Yzc"/>
-                    <constraint firstItem="yca-aa-Fhp" firstAttribute="trailing" secondItem="Meu-FS-Wjo" secondAttribute="trailing" constant="16" id="V0G-Tl-eZA"/>
-                    <constraint firstItem="Meu-FS-Wjo" firstAttribute="leading" secondItem="yca-aa-Fhp" secondAttribute="leading" constant="16" id="zCu-jX-HMJ"/>
+                    <constraint firstItem="yca-aa-Fhp" firstAttribute="trailing" secondItem="Meu-FS-Wjo" secondAttribute="trailing" constant="10" id="V0G-Tl-eZA"/>
+                    <constraint firstItem="Meu-FS-Wjo" firstAttribute="top" secondItem="6yt-8S-u4v" secondAttribute="bottom" constant="20" id="Xah-DZ-ua4"/>
+                    <constraint firstItem="Meu-FS-Wjo" firstAttribute="height" secondItem="6yt-8S-u4v" secondAttribute="height" multiplier="0.5" id="jXa-i8-MEO"/>
+                    <constraint firstItem="yca-aa-Fhp" firstAttribute="trailing" secondItem="6yt-8S-u4v" secondAttribute="trailing" constant="10" id="lN4-4Y-zcg"/>
+                    <constraint firstItem="Meu-FS-Wjo" firstAttribute="leading" secondItem="yca-aa-Fhp" secondAttribute="leading" constant="10" id="zCu-jX-HMJ"/>
+                    <constraint firstItem="6yt-8S-u4v" firstAttribute="top" secondItem="yca-aa-Fhp" secondAttribute="top" constant="10" id="zz2-ri-oOw"/>
                 </constraints>
                 <viewLayoutGuide key="safeArea" id="yca-aa-Fhp"/>
             </view>
+            <connections>
+                <outlet property="viewCollection" destination="6yt-8S-u4v" id="Mn4-6V-ldy"/>
+            </connections>
             <point key="canvasLocation" x="-416.25" y="54.929577464788736"/>
         </viewController>
     </objects>

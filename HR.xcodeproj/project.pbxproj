@@ -13,6 +13,7 @@
 		E8B976BE227817A40093B3F2 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8B976BD227817A40093B3F2 /* MainWindow.xib */; };
 		E8B976C0227819D80093B3F2 /* HRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B976BF227819D80093B3F2 /* HRViewController.swift */; };
 		E8B976C222781DCB0093B3F2 /* HRModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B976C122781DCB0093B3F2 /* HRModel.swift */; };
+		E8C9645522783A1F00A9AC94 /* HRCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8C9645422783A1F00A9AC94 /* HRCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E8B976BD227817A40093B3F2 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		E8B976BF227819D80093B3F2 /* HRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRViewController.swift; sourceTree = "<group>"; };
 		E8B976C122781DCB0093B3F2 /* HRModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRModel.swift; sourceTree = "<group>"; };
+		E8C9645422783A1F00A9AC94 /* HRCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HRCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				E8B976BD227817A40093B3F2 /* MainWindow.xib */,
 				E8B976BF227819D80093B3F2 /* HRViewController.swift */,
 				E8B976C122781DCB0093B3F2 /* HRModel.swift */,
+				E8C9645422783A1F00A9AC94 /* HRCollectionViewCell.xib */,
 			);
 			path = HR;
 			sourceTree = "<group>";
@@ -127,6 +130,7 @@
 			files = (
 				E8B976B62278171A0093B3F2 /* LaunchScreen.storyboard in Resources */,
 				E8B976B32278171A0093B3F2 /* Assets.xcassets in Resources */,
+				E8C9645522783A1F00A9AC94 /* HRCollectionViewCell.xib in Resources */,
 				E8B976BE227817A40093B3F2 /* MainWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
